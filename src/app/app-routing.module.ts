@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'voting',
     loadChildren: () => import('./voting/voting.module').then( m => m.VotingPageModule)
   },
+  {
+    path: 'vote',
+    loadChildren: () => import('./vote/vote.module').then( m => m.VotePageModule)
+  },
 
 ];
 

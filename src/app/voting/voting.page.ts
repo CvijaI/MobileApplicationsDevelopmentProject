@@ -9,7 +9,7 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./voting.page.scss'],
 })
 export class VotingPage implements OnInit {
-  myAnimalOrder: string= '';
+  myAnimalOrder: string= "";
   constructor(private storage: Storage, private navCtrl: NavController) { }
   ngOnInit() {
   }

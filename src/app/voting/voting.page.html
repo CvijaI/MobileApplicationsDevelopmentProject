@@ -11,7 +11,7 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-title>Current favourite animal order is {{myAnimalOrder}}</ion-title>
+  <ion-title font="bold">Current favourite animal order is {{myAnimalOrder}}</ion-title>
 <ion-list>
 <ion-radio-group [(ngModel)]="myAnimalOrder">
 <ion-item>
@@ -29,8 +29,6 @@
 </ion-radio-group>
 </ion-list>
 <ion-button (click)="saveAnimal()">Save</ion-button>
-
-  <ion-title>Your favourite animal order: </ion-title>
 
   <ul>
     <ion-button fill="outline" expand="full" shape="round" [routerLink]="['/home']" routerDirection="forward">Home</ion-button> 
