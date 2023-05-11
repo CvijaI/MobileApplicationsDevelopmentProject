@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ServiceAnimalsService } from '../service-animals.service';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -9,4 +11,7 @@ export class HomePage {
 stories:any[]=[];
   constructor() {}
   
+  ngOnInit() {
+    
+  }
 }

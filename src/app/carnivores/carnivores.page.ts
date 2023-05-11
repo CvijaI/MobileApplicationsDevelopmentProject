@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceAnimalsService } from '../service-animals.service';
 
 @Component({
   selector: 'app-carnivores',

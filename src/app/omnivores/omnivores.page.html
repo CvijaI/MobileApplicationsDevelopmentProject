@@ -10,4 +10,10 @@
       <ion-title size="large">Omnivores</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ul>
+    <ion-button shape="round" [routerLink]="['/home']" routerDirection="forward">Home</ion-button> 
+    <ion-button color="danger" shape="round" [routerLink]="['/carnivores']" routerDirection="forward">Carnivores </ion-button>
+    <ion-button color="success" shape="round" [routerLink]="['/herbivores']" routerDirection="forward">Herbivores </ion-button>
+  </ul>
 </ion-content>
