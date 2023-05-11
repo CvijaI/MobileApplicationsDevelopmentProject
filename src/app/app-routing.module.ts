@@ -14,6 +14,18 @@ const routes: Routes = [
     path: 'test',
     loadChildren: () => import('./test/test.module').then( m => m.TestPageModule)
   },
+  {
+    path: 'carnivores',
+    loadChildren: () => import('./carnivores/carnivores.module').then( m => m.CarnivoresPageModule)
+  },
+  {
+    path: 'herbivores',
+    loadChildren: () => import('./herbivores/herbivores.module').then( m => m.HerbivoresPageModule)
+  },
+  {
+    path: 'omnivores',
+    loadChildren: () => import('./omnivores/omnivores.module').then( m => m.OmnivoresPageModule)
+  },
 
 ];
 
