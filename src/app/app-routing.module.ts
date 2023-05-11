@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'omnivores',
     loadChildren: () => import('./omnivores/omnivores.module').then( m => m.OmnivoresPageModule)
   },
+  {
+    path: 'voting',
+    loadChildren: () => import('./voting/voting.module').then( m => m.VotingPageModule)
+  },
 
 ];
 
