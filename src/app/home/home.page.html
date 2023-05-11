@@ -7,13 +7,21 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-content [fullscreen]="true">
+<ion-header collapse="condense">
+<ion-toolbar>
+<ion-title font="bold" size="large">Animals</ion-title>
+</ion-toolbar>
+</ion-header>
 
-  <div id="container">
- <h3>Welcome to Mobile Apps Starter project 2023.</h3>
-  </div>
+<h3>Three different types of animals.</h3>
+
+<ul>
+<ion-button color="danger" shape="round" [routerLink]="['/carnivores']" routerDirection="forward">Carnivores </ion-button>
+<br>
+<ion-button color="success" shape="round" [routerLink]="['/herbivores']" routerDirection="forward">Herbivores </ion-button>
+<br>
+<ion-button color="warning" shape="round" [routerLink]="['/omnivores']" routerDirection="forward">Omnivores </ion-button>
+</ul>
+
 </ion-content>

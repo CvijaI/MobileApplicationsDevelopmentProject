@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carnivores.page.scss'],
 })
 export class CarnivoresPage implements OnInit {
-
+  largestCarnivores: string[] = ["Polar bear(Ursus maritimus)", "Brown bear(Ursus arctos)", "American black bear(Ursus americanus)", "Tiger(Panthera tigris)", "Lion(Panthera leo)"]
   constructor() { }
-
+  
   ngOnInit() {
+    
   }
-
+  
 }
