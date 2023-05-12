@@ -7,16 +7,19 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
+      <!--title-->
       <ion-title size="large">Herbivores</ion-title>
     </ion-toolbar>
   </ion-header>
   <ul>
+  <!--text about herbivores-->
   <ion-text color="success">An herbivore is an organism that mostly feeds on plants. Herbivores range in size from tiny insects such as aphids to large, lumbering elephants. Herbivores are a major part of the food web, a description of which organisms eat other organisms in the wild.</ion-text>
   <br>
   <br>
   <h1 font="bold">Types of herbivores:</h1>
   <li *ngFor="let h of herbivoreTypes">{{h}}</li>
   <br>
+  <!--picture, name and the type of an animal-->
   <ion-img
   style="width:75%"
   src="https://www.ecography.org/sites/ecography.org/files/styles/adaptive/public/kissling_tortoise.jpg?itok=WUYQ5xyl"
@@ -24,6 +27,7 @@
 <ion-text color="success">A turtoise(Frugivore)</ion-text>
 <br>
 <br>
+<!--picture, name and the type of an animal-->
 <ion-img
   style="width:75%"
   src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/9/22/1411366216880/fe54ecfe-24aa-4ec4-8519-4e4383f16b8b-1024x768.jpeg?width=700&quality=85&auto=format&fit=max&s=a4dcb2ced57e08929ec042b34c6c0174"
@@ -31,6 +35,7 @@
 <ion-text color="success">A parrot(Granivore)</ion-text>
 <br>
 <br>
+<!--picture, name and the type of an animal-->
 <ion-img
   style="width:75%"
   src="https://c4.wallpaperflare.com/wallpaper/411/1004/6/hummingbird-feeding-on-flower-wallpaper-preview.jpg"
@@ -38,6 +43,7 @@
 <ion-text color="success">A hummingbird(Nectarivore)</ion-text>
 <br>
 <br>
+<!--picture, name and the type of an animal-->
 <ion-img
   style="width:75%"
   src="https://images.theconversation.com/files/350851/original/file-20200803-22-dfm95n.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop"
@@ -45,6 +51,7 @@
 <ion-text color="success">A panda(Folivore)</ion-text>
 <br>
 <br>
+<!--picture, name and the type of an animal-->
 <ion-img
   style="width:75%"
   src="https://img-4.linternaute.com/i3H93J0cR-u_CV1UKnHDOhWjuK8=/1500x/smart/28d371f88399489198435a57f2727b26/ccmcms-linternaute/35718716.jpg"
@@ -52,12 +59,14 @@
 <ion-text color="success">A Hylotrupe(Xylophage)</ion-text>
 <br>
 <br>
+<!--picture, name and the type of an animal-->
 <ion-img
   style="width:75%"
   src="https://images.allthingsnature.org/slideshow-mobile-small/three-earthworms.jpg"
 ></ion-img>
 <ion-text color="success">An earthworm(Detritivore)</ion-text>  
 <br>
+<!--buttons for other pages-->
     <ion-button fill="outline" expand="full" shape="round" [routerLink]="['/home']" routerDirection="forward">Home</ion-button> 
     <ion-button color="danger" shape="round" [routerLink]="['/carnivores']" routerDirection="forward">Carnivores </ion-button>
     <ion-button color="warning" shape="round" [routerLink]="['/omnivores']" routerDirection="forward">Omnivores </ion-button>

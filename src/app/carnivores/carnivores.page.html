@@ -7,39 +7,47 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
+      <!--title-->
       <ion-title size="large">Carnivores</ion-title>
     </ion-toolbar>
   </ion-header>
   <ul>
-<ion-text color="danger">A carnivore is an animal that mostly eats meat, or the flesh of animals. Carnivores hunt prey, predominantly herbivores.</ion-text>
-<br>
+  <!--text about herbivores-->
+  <ion-text color="danger">A carnivore is an animal that mostly eats meat, or the flesh of animals. Carnivores hunt prey, predominantly herbivores.</ion-text>
+  <br>
   <h1 font="bold">5 largest carnivores:</h1>
+<!--picture, name and the type of an animal-->
 <ion-img
   style="width:75%"
   src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Polar_bear_after_unlucky_hunt_for_a_seal.jpg/800px-Polar_bear_after_unlucky_hunt_for_a_seal.jpg"
 ></ion-img>
+<!--picture, name and the type of an animal-->
 <ion-img
   style="width:75%"
   src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Kodiak_bear_in_germany.jpg/800px-Kodiak_bear_in_germany.jpg"
 ></ion-img>
+<!--picture, name and the type of an animal-->
 <ion-img
   style="width:75%"
   src="https://cdn.britannica.com/19/235819-050-4FBB01D1/American-black-bear-ursus-americanus-sow-mother-with-two-cubs-in-tree.jpg"
 ></ion-img>
+<!--picture, name and the type of an animal-->
 <ion-img
   style="width:75%"
   src="https://i0.wp.com/wilderness-society.org/wp-content/uploads/2017/01/tiger-1975790.jpg?resize=800%2C445&ssl=1"
 ></ion-img>
+<!--picture, name and the type of an animal-->
 <ion-img
   style="width:75%"
   src="https://cdn.shopify.com/s/files/1/0597/5467/6387/articles/PHOTO_LION_99595812-a3f3-4d7c-a0e5-32b96fdf0e95_900x.png?v=1680271720"
 ></ion-img>
+<!--list of largest carnivores, calling the list from .ts-->
   <li *ngFor="let c of largestCarnivores">{{c}}</li>
 </ul>
-
 <ul>
   <br>
   <br>
+<!--buttons for other pages-->
   <ion-button fill="outline" expand="full" shape="round" [routerLink]="['/home']" routerDirection="forward">Home</ion-button> 
   <ion-button color="success" shape="round" [routerLink]="['/herbivores']" routerDirection="forward">Herbivores </ion-button>
   <ion-button color="warning" shape="round" [routerLink]="['/omnivores']" routerDirection="forward">Omnivores </ion-button>

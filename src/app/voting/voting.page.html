@@ -7,11 +7,13 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
+      <!--title-->
       <ion-title size="large">Voting</ion-title>
     </ion-toolbar>
   </ion-header>
-
+  <!--title that displays the user's favorite animal, calls the variable myAnimalOrder-->
   <ion-title font="bold">Favourite animal order: <br>{{myAnimalOrder}}</ion-title>
+<!--list of radio buttons for myAnimalOrder-->
 <ion-list>
 <ion-radio-group [(ngModel)]="myAnimalOrder">
 <ion-item>
@@ -28,9 +30,10 @@
 </ion-item>
 </ion-radio-group>
 </ion-list>
+<!--calling the saveAnimal method-->
 <ion-button (click)="saveAnimal()">Save</ion-button>
-
   <ul>
+    <!--home button-->
     <ion-button fill="outline" expand="full" shape="round" [routerLink]="['/home']" routerDirection="forward">Home</ion-button> 
   </ul>
 </ion-content>
