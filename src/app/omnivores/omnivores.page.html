@@ -48,5 +48,7 @@
     <ion-button fill="outline" expand="full" shape="round" [routerLink]="['/home']" routerDirection="forward">Home</ion-button> 
     <ion-button color="danger" shape="round" [routerLink]="['/carnivores']" routerDirection="forward">Carnivores </ion-button>
     <ion-button color="success" shape="round" [routerLink]="['/herbivores']" routerDirection="forward">Herbivores </ion-button>
+    
+    <ion-button (click)="openBrowser()">More omnivores</ion-button>
   </ul>
 </ion-content>

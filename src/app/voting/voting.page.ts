@@ -22,7 +22,7 @@ export class VotingPage implements OnInit {
     await this.storage.set('animal', this.myAnimalOrder)
     .then(
     ()=>{
-    this.navCtrl.navigateBack('/home')
+    
     })
     .catch();
     }

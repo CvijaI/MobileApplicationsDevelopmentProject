@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Browser } from '@capacitor/browser';
 
 @Component({
   selector: 'app-omnivores',
@@ -12,4 +13,7 @@ export class OmnivoresPage implements OnInit {
   ngOnInit() {
   }
 
+  async openBrowser() {
+    await Browser.open({ url: 'https://a-z-animals.com/blog/well-known-animals-that-are-omnivores/' });
+  };
 }
