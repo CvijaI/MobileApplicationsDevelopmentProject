@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./omnivores.page.scss'],
 })
 export class OmnivoresPage implements OnInit {
-
+  omnivores: string[] = ["Granivores eat mostly seeds", "Nectarivores eat mostly nectar", "Folivores eat mostly leaves", "Xylophagy eat mostly wood", "Detritivores eat mostly dead plant material"]
   constructor() { }
 
   ngOnInit() {

@@ -10,8 +10,41 @@
       <ion-title size="large">Omnivores</ion-title>
     </ion-toolbar>
   </ion-header>
-
   <ul>
+    <ion-text color="warning">Omnivores are a diverse group of animals. Examples of omnivores include bears, birds, dogs, raccoons, foxes, certain insects, and even humans. Animals that hunt other animals are known as predators, while those that are hunted are known as prey. Since omnivores hunt and are hunted, they can be both predators and prey.</ion-text>
+    <br>
+    <br>
+    <h1 font="bold">Some examples of omnivores:</h1>
+    <li *ngFor="let o of omnivores">{{o}}</li>
+    <br>
+    <ion-img
+    style="width:75%"
+    src="https://mymodernmet.com/wp/wp-content/uploads/2020/05/black-orange-fox-sam-gaby-2.jpg"
+  ></ion-img>
+  <ion-text color="warning">A melanistic fox</ion-text>
+  <br>
+  <br>
+  <ion-img
+    style="width:75%"
+    src="https://a-z-animals.com/media/2022/03/shutterstock_1206708022.jpg"
+  ></ion-img>
+  <ion-text color="warning">A pig</ion-text>
+  <br>
+  <br>
+  <ion-img
+    style="width:75%"
+    src="https://slothconservation.b-cdn.net/wp-content/uploads/2016/06/SLOTH_TH_027338.jpg"
+  ></ion-img>
+  <ion-text color="warning">A sloth</ion-text>
+  <br>
+  <br>
+  <ion-img
+    style="width:75%"
+    src="https://media-be.chewy.com/wp-content/uploads/2021/06/10162333/ItalianGreyhound-FeaturedImage-1024x615.jpg"
+  ></ion-img>
+  <ion-text color="warning">A dog(Italian greyhound in the picture)</ion-text>
+  <br>
+  <br>
     <ion-button fill="outline" expand="full" shape="round" [routerLink]="['/home']" routerDirection="forward">Home</ion-button> 
     <ion-button color="danger" shape="round" [routerLink]="['/carnivores']" routerDirection="forward">Carnivores </ion-button>
     <ion-button color="success" shape="round" [routerLink]="['/herbivores']" routerDirection="forward">Herbivores </ion-button>
